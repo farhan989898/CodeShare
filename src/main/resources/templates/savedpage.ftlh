@@ -484,12 +484,12 @@ body {
 </style>
 <body>
 <div class="header">
-    <a href="/code/new" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
+    <a href="/" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
         <img src="https://pastebin.com/themes/pastebin/img/pastebin_logo_side_outline_support_ukraine.webp" alt="CodeShareBox Logo" class="logo"> CodeShareBox </a>
     <div class="navigation">
-        <a href="/code/new">Home</a>
-        <a href="/code/latest">Latest CodeShares</a>
-        <a href="/code/about">About</a>
+        <a href="/">Home</a>
+        <a href="/latest">Latest CodeShares</a>
+        <a href="/about">About</a>
     </div>
 </div>
 <div class="custom-container">
@@ -621,14 +621,14 @@ body {
 <script>
       function getDynamicUrl() {
         const currentUrl = window.location.href;
-        const baseUrl = currentUrl.substring(0, currentUrl.indexOf("/code"));
+        const baseUrl = currentUrl.substring(0, currentUrl.indexOf("/confirm"));
         return baseUrl;
       }
     </script>
 <script>
       document.addEventListener("DOMContentLoaded", function() {
         const copyLinkInput = document.getElementById("copyLink");
-        const dynamicUrl = getDynamicUrl() + "/code/${id}";
+        const dynamicUrl = getDynamicUrl() + "/${id}";
         copyLinkInput.value = dynamicUrl;
         const twitterShareLink = document.getElementById("twitterShareLink");
         twitterShareLink.href = "https://twitter.com/intent/tweet?text=" + dynamicUrl;
@@ -673,7 +673,7 @@ body {
       document.getElementById('createNewButton').addEventListener('click', function() {
         // ... Other logic ...
         // Redirect to the desired URL
-        window.location.href = '/code/new';
+        window.location.href = '/';
       });
     </script>
 </body>

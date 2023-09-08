@@ -203,12 +203,12 @@ button:hover {
 </style>
 <body>
 <div class="header">
-    <a href="/code/new" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
+    <a href="/" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
         <img src="https://pastebin.com/themes/pastebin/img/pastebin_logo_side_outline_support_ukraine.webp" alt="CodeShareBox Logo" class="logo"> CodeShareBox </a>
     <div class="navigation">
-        <a href="/code/new">Home</a>
-        <a href="/code/latest">Latest CodeShares</a>
-        <a href="/code/about">About</a>
+        <a href="/">Home</a>
+        <a href="/latest">Latest CodeShares</a>
+        <a href="/about">About</a>
     </div>
 </div>
 <div class="main-content">
@@ -279,7 +279,7 @@ button:hover {
           // Check if the id is available in the response
           if (data && data.id) {
             // Redirect to the new page using the id
-            window.location.href = '/code/confirm/' + data.id;
+            window.location.href = '/confirm/' + data.id;
           } else {
             console.error('No id found in the response.');
           }

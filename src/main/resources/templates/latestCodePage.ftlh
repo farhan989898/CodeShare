@@ -182,12 +182,12 @@ body {
 </style>
 <body>
 <div class="header">
-    <a href="/code/new" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
+    <a href="/" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
         <img src="https://pastebin.com/themes/pastebin/img/pastebin_logo_side_outline_support_ukraine.webp" alt="CodeShareBox Logo" class="logo"> CodeShareBox </a>
     <div class="navigation">
-        <a href="/code/new">Home</a>
-        <a href="/code/latest">Latest CodeShares</a>
-        <a href="/code/about">About</a>
+        <a href="/">Home</a>
+        <a href="/latest">Latest CodeShares</a>
+        <a href="/about">About</a>
     </div>
 </div>
 <main class="main-content">
