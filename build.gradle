@@ -34,7 +34,7 @@ bootJar {
 
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.hibernate.validator:hibernate-validator'
