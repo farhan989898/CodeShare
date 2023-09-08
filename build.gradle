@@ -15,13 +15,12 @@ repositories {
 	mavenCentral()
 }
 bootJar {
-	mainClassName = 'com.codeShareBox.CodeShareBoxApplication'
-}
-
-
-bootJar {
+	mainClass = 'com.codeShareBox.CodeShareBoxApplication'
 	archiveFileName = 'CodeShareBox.jar'
 }
+
+
+
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
