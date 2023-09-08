@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/androidstudio.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
 /* Reset some default styles */
@@ -208,14 +216,7 @@ body {
     </div>
 </#list>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
-<script>
-      hljs.initHighlightingOnLoad();
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
       function copyCode(button, codeSnippetId) {
         const codeSnippet = document.getElementById(codeSnippetId);

@@ -480,6 +480,7 @@ body {
 .dynamic-text:hover {
   opacity: 1;
 }
+
 </style>
 <body>
 <div class="header">

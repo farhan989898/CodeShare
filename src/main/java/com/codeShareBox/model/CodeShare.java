@@ -18,8 +18,10 @@ public class CodeShare {
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(columnDefinition = "BINARY(16)") // Use BINARY(16) for UUID
     private UUID id; // Change the type to UUID
-    @Column(name = "code")
-    @Lob // Use the @Lob annotation to indicate CLOB
+//    @Column(name = "code")
+//    @Lob // Use the @Lob annotation to indicate CLOB
+//    private String code;
+    @Column(name = "code", columnDefinition = "MEDIUMTEXT") // Use MEDIUMTEXT data type
     private String code;
     @JsonIgnore
     private String date;
