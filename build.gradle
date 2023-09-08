@@ -14,6 +14,10 @@ java {
 repositories {
 	mavenCentral()
 }
+bootJar {
+	mainClassName = 'com.codeShareBox.CodeShareBoxApplication'
+}
+
 
 bootJar {
 	archiveFileName = 'CodeShareBox.jar'
@@ -33,7 +37,6 @@ dependencies {
 	implementation 'org.jetbrains:annotations:20.1.0'
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 	implementation 'org.springframework.boot:spring-boot-starter-test'
-
 }
 
 tasks.named('test') {
