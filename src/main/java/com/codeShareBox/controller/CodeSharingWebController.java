@@ -56,7 +56,7 @@ public class CodeSharingWebController {
      *
      * @return The name of the FreeMarker template for the new code page.
      */
-    @GetMapping("/code/new")
+    @GetMapping("/")
     public String getNewCode() {
         return codeSharingWebServices.getNewCode();
     }
