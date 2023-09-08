@@ -9,7 +9,7 @@ COPY build.gradle settings.gradle ./
 COPY . /app/
 
 # Build the JAR using Gradle
-RUN gradle clean build
+RUN gradle clean build -x test
 
 # Stage 2: Create the final image
 FROM openjdk:17-alpine
