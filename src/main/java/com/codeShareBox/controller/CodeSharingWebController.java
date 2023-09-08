@@ -34,7 +34,7 @@ public class CodeSharingWebController {
      * @param model The Spring MVC model to populate with code details.
      * @return The name of the FreeMarker template for the confirmation page.
      */
-    @GetMapping("/code/confirm/{id}")
+    @GetMapping("/confirm/{id}")
     public String getConfirmation(@PathVariable UUID id, Model model) {
         return codeSharingWebServices.getConfirmation(id,model);
     }
@@ -46,7 +46,7 @@ public class CodeSharingWebController {
      * @param model The Spring MVC model to populate with code details.
      * @return The name of the FreeMarker template for the code snippet page.
      */
-    @GetMapping("/code/{id}")
+    @GetMapping("/{id}")
     public String getCode(@PathVariable UUID id, Model model) {
         return codeSharingWebServices.getCode(id,model);
     }
@@ -66,7 +66,7 @@ public class CodeSharingWebController {
      *
      * @return The name of the FreeMarker template for the "about" page.
      */
-    @GetMapping("/code/about")
+    @GetMapping("/about")
     public String getAboutUs() {
         return codeSharingWebServices.getAboutUs();
     }
@@ -77,7 +77,7 @@ public class CodeSharingWebController {
      * @param model The Spring MVC model to populate with code details.
      * @return The name of the FreeMarker template for the latest code page.
      */
-    @GetMapping("/code/latest")
+    @GetMapping("/latest")
     public String getLatestCodeInHtml(Model model) {
        return codeSharingWebServices.getLatestCodeInHtml(model);
     }
@@ -87,7 +87,7 @@ public class CodeSharingWebController {
      *
      * @return The name of the FreeMarker template for the custom 404 error page.
      */
-    @GetMapping("/code/404")
+    @GetMapping("/404")
     public String get404Error() {
         return codeSharingWebServices.get404Error();
     }
