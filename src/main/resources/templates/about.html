@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateShareBox - About CodeShareBox</title>
+</head>
+<style > body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><path d="M0 10 L200 200 L400 10 Z" fill="%230c1b39"/><circle cx="60" cy="40" r="15" fill="%230c0f21"/><circle cx="120" cy="80" r="15" fill="%230c0f21"/><circle cx="180" cy="120" r="15" fill="%230c0f21"/><circle cx="240" cy="160" r="15" fill="%230c0f21"/><circle cx="300" cy="200" r="15" fill="%230c0f21"/><circle cx="360" cy="240" r="15" fill="%230c0f21"/><line x1="60" y1="40" x2="200" y2="200" stroke="%23666" stroke-width="2"/><line x1="120" y1="80" x2="200" y2="200" stroke="%23666" stroke-width="2"/><line x1="180" y1="120" x2="200" y2="200" stroke="%23666" stroke-width="2"/><line x1="240" y1="160" x2="200" y2="200" stroke="%23666" stroke-width="2"/><line x1="300" y1="200" x2="200" y2="200" stroke="%23666" stroke-width="2"/><line x1="360" y1="240" x2="200" y2="200" stroke="%23666" stroke-width="2"/></svg>')
+    repeat;
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #0c1b39;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #ff9900;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #ff9900;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  padding: 3rem;
+  background-color: #25282d;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #3498db;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  color: #b2becd;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #1e90ff;
+}
+
+.highlight {
+  color: #ff6347;
+}
+
+.icon {
+  font-size: 36px;
+  color: #3498db;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #1f2026; /* Darker background color */
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  font-size: 28px;
+  color: #1e90ff;
+  margin-right: 20px;
+  width: 28px;
+}
+
+.feature-text {
+  flex: 1;
+  font-size: 20px;
+  color: #b2becd;
+  font-family: "Montserrat", sans-serif; /* Stylish font */
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.feature-box:hover {
+  transform: translateX(5px);
+}
+
+.highlight-box {
+  background-color: #ff6347;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.highlight-box:hover {
+  background-color: #ff5733;
+  transform: translateY(-3px);
+}
+
+.highlight-text {
+  font-size: 20px;
+}
+
+.highlight-arrow {
+  font-size: 24px;
+}
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem; /* Reduce padding for small screens */
+  }
+  .title {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
+  .description {
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+  .feature-text {
+    font-size: 18px; /* Adjust font size for small screens */
+  }
+}
+
+/* Medium screens (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 2.5rem; /* Adjust padding for medium screens */
+  }
+  .title {
+    font-size: 32px; /* Adjust font size for medium screens */
+  }
+  .description {
+    font-size: 17px; /* Adjust font size for medium screens */
+  }
+  .feature-text {
+    font-size: 19px; /* Adjust font size for medium screens */
+  }
+}
+
+/* Larger screens (greater than 1024px) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 3rem; /* Adjust padding for larger screens */
+  }
+  .title {
+    font-size: 36px; /* Adjust font size for larger screens */
+  }
+  .description {
+    font-size: 18px; /* Adjust font size for larger screens */
+  }
+  .feature-text {
+    font-size: 20px; /* Adjust font size for larger screens */
+  }
+}
+</style>
+<body>
+<div class="header">
+    <a href="/code/new" class="logo-text" style="display: flex; align-items: center; text-decoration: none;">
+        <img src="https://pastebin.com/themes/pastebin/img/pastebin_logo_side_outline_support_ukraine.webp" alt="CodeShareBox Logo" class="logo"> CodeShareBox </a>
+    <div class="navigation">
+        <a href="/code/new">Home</a>
+        <a href="/code/latest">Latest CodeShares</a>
+        <a href="#">About</a>
+    </div>
+</div>
+<div class="container">
+    <div class="title">Discover <span class="highlight">CodeShareBox</span>
+    </div>
+    <div class="description">
+        <div class="feature-box">
+            <div class="feature-icon">&#x1F4BB;</div>
+            <div class="feature-text">Effortlessly share and collaborate on code snippets.</div>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon">&#x1F4E6;</div>
+            <div class="feature-text">Troubleshoot bugs and enhance teamwork with our streamlined API and web interface.</div>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon">&#x1F4A1;</div>
+            <div class="feature-text">Safeguard sensitive code under NDAs through a private platform designed exclusively for your team.</div>
+        </div>
+    </div>
+    <div class="highlight-box" onclick="redirectToGitHub()">
+        <div class="highlight-text">Join the Future of Code Sharing Today And Contribute</div>
+        <div class="highlight-arrow">→</div>
+    </div>
+</div>
+<script>
+   function redirectToGitHub() {
+      window.location.href = "https://github.com/mdfarhananwar/Code-SharingPlatform";
+   }
+</script>
+</body>
+</html>
