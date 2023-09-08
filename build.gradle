@@ -14,7 +14,7 @@ java {
 repositories {
 	mavenCentral()
 }
-
+tasks.named('bootJar') {     launchScript() }
 jar {
 	manifest {
 		attributes(
