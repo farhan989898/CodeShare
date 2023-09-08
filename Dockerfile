@@ -20,4 +20,5 @@ COPY --from=build /app/build/libs/*.jar codeShareBox.jar
 
 # Expose the port and specify the entry point
 EXPOSE 8080
+ENV SPRING_PROFILES_ACTIVE=prod
 ENTRYPOINT ["java","-jar","codeShareBox.jar"]

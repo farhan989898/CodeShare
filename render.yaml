@@ -1,0 +1,9 @@
+env:
+  - key: SPRING_DATASOURCE_URL
+    value: jdbc:mysql://containers-us-west-56.railway.app:7221/railway
+  - key: SPRING_DATASOURCE_USERNAME
+    value: root
+  - key: SPRING_DATASOURCE_PASSWORD
+    value: tZVqRXQZ4tTcU3QLHB5q
+  - key: SPRING_PROFILES_ACTIVE
+    value: prod
