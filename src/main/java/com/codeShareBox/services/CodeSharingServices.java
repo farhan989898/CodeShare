@@ -23,16 +23,15 @@ import java.util.UUID;
 @Service
 public class CodeSharingServices {
 
-    private final CodeShareRepository codeShareRepository;
+    @Autowired
+    private CodeShareRepository codeShareRepository;
     /**
      * Constructor for CodeSharingServices class.
      *
      * @param codeShareRepository The repository for managing code sharing.
      */
-    @Autowired
-    public CodeSharingServices(CodeShareRepository codeShareRepository) {
-        this.codeShareRepository = codeShareRepository;
-    }
+
+
 
     /**
      * Get code details via REST API based on the provided ID.
