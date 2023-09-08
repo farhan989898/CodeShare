@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM gradle:7.6-jdk17-alpine AS build
+FROM gradle:8.2.1-jdk17-alpine AS build
 WORKDIR /app
 
 # Copy the build.gradle and settings.gradle files
